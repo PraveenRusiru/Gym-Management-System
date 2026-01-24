@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="clientDataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1126.0" style="-fx-background-color: #111010;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.AddNewClientsController">
+   <children>
+      <VBox prefHeight="658.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="158.0" prefWidth="1126.0" />
+            <Pane prefHeight="649.0" prefWidth="1126.0">
+               <children>
+                  <Pane fx:id="applicationPane" layoutX="14.0" layoutY="7.0" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px;">
+                     <children>
+                        <VBox prefHeight="543.0" prefWidth="1100.0">
+                           <children>
+                              <Pane prefHeight="12.0" prefWidth="1060.0">
+                                 <children>
+                                    <Label text="Cleint Details  : " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="clientIdLbl" layoutX="104.0" layoutY="-1.0" text="Cleint Details " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dateLbl" layoutX="207.0" layoutY="-1.0" text="Cleint Details " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="429.0">
+                                       <children>
+                                          <Pane fx:id="firstNamePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10; radi: ;">
+                                             <children>
+                                                <JFXTextField fx:id="firstNameTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validationFirstName" prefHeight="30.0" prefWidth="378.0" promptText="First Name" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="355.0" layoutY="14.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-group-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="405.0">
+                                       <children>
+                                          <Pane fx:id="lastNamePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="lastNameTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateLastName" prefHeight="30.0" prefWidth="378.0" promptText="Last Name" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="356.0" layoutY="14.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-group-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="97.0">
+                                       <children>
+                                          <Pane fx:id="agePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="ageTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateAge" prefHeight="30.0" prefWidth="87.0" promptText="Age" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="66.0" layoutY="17.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-age-50.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="209.0">
+                                       <children>
+                                          <Pane fx:id="nicPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="nicTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateNic" prefHeight="30.0" prefWidth="198.0" promptText="NIC" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="176.0" layoutY="16.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-identity-card-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="240.0">
+                                       <children>
+                                          <Pane fx:id="numberPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-radius: 10; -fx-border-width: 0.2px;">
+                                             <children>
+                                                <JFXTextField fx:id="numberTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateNumber" prefHeight="30.0" prefWidth="224.0" promptText="Mobile Number" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="210.0" layoutY="17.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-whatsapp-50.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="719.0">
+                                       <children>
+                                          <Pane fx:id="mailPane" prefHeight="48.0" prefWidth="344.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="mailTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateMail" prefHeight="30.0" prefWidth="615.0" promptText="E-Mail" styleClass="text-field" stylesheets="@../../cssForBody/style.css" text="\@gmail.com" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="591.0" layoutY="16.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-mail-24.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" prefHeight="30.0" prefWidth="143.0" promptText="Gender" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="13.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-gender-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ComboBox fx:id="comboBox" layoutX="12.0" layoutY="8.0" onAction="#comboBoxSelected" prefHeight="30.0" prefWidth="89.0" promptText="Gender" style="-fx-background-color: #111010;" stylesheets="@style2.css">
+                                                   <styleClass>
+                                                      <String fx:value="combo-box-popup" />
+                                                      <String fx:value="list-view" />
+                                                   </styleClass></ComboBox>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane fx:id="heightPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="heightTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateHeight" prefHeight="30.0" prefWidth="143.0" promptText="Height                 cm" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="17.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-height-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane fx:id="weightPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="weightTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateWeight" prefHeight="30.0" prefWidth="143.0" promptText="Weight                  kg" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="17.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-weight-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane fx:id="fatPerPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                             <children>
+                                                <JFXTextField fx:id="fatPerTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateFatPer" prefHeight="30.0" prefWidth="143.0" promptText="Fat Percentage   " styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="17.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-percentage-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="471.0" spacing="5.0">
+                                       <children>
+                                          <Pane prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-radius: 10; -fx-border-width: 0.2px;">
+                                             <children>
+                                                <JFXTextField focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" prefHeight="30.0" prefWidth="307.0" promptText="Goal" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="289.0" layoutY="18.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-goal-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ComboBox fx:id="comboBoxGoal" layoutX="11.0" layoutY="8.0" onAction="#comboBoxGoalSelected" prefHeight="30.0" prefWidth="266.0" promptText="Goal" style="-fx-background-color: #111010;" styleClass="combo-box-popup" stylesheets="@style2.css" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets top="15.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <Pane prefHeight="100.0" prefWidth="144.0">
+                                       <HBox.margin>
+                                          <Insets left="320.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <JFXButton fx:id="continueBtn" layoutX="38.0" layoutY="50.0" onAction="#navigateToServiceClient" style="-fx-background-color: #211d35; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #a564d3;" text="Continue" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton fx:id="updateBtn" layoutX="38.0" layoutY="50.0" onAction="#navigateToShowClient" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: #211d35; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #a564d3;" text="Update" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <HBox prefHeight="82.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="218.0" prefWidth="316.0">
+               <children>
+                  <Label fx:id="clientLbl" alignment="CENTER" contentDisplay="CENTER" text="Clients" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="38.0" prefWidth="312.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="11.0" text="New Client" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="149.0" prefWidth="177.0">
+               <children>
+                  <JFXButton fx:id="backClientBtn" onAction="#navigateToClientList" prefHeight="28.0" prefWidth="62.0" style="-fx-background-color: #211d35; -fx-border-color: #7db37c; -fx-border-radius: 20; -fx-background-radius: 20;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="45.0" top="18.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets left="630.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

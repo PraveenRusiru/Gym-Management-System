@@ -1,0 +1,13 @@
+.chart-plot-background {
+    -fx-background-color:  #111010; /* Change this to your desired color */
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #111010; /* Light gray */
+    -fx-stroke-dash-array: 5 5; /* Dashed line */
+}
+
+/* Set the color for vertical grid lines */
+.chart-vertical-grid-lines {
+    -fx-stroke: #111010; /* Light gray */
+    -fx-stroke-dash-array: 5 5; /* Dashed line */
+}

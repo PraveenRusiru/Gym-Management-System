@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="rowBarHbox" alignment="CENTER_LEFT" onMouseClicked="#selectionClick" prefHeight="47.0" prefWidth="697.0" spacing="63.0" style="-fx-background-color: #232323; -fx-border-width: 0 0 1 0; -fx-border-color: #111010;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.SheduleRowController">
+   <children>
+      <Pane prefHeight="46.0" prefWidth="122.0">
+         <children>
+            <Label fx:id="priorityLbl" alignment="CENTER" contentDisplay="CENTER" layoutY="17.0" prefHeight="15.0" prefWidth="25.0" text="1" textFill="#8a888a">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="workoutLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="17.0" prefWidth="103.0" text="Incline Bench Press" textFill="#8a888a">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="weightLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="39.0" text="123" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label fx:id="setLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="18.5" text="5" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label fx:id="repLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="22.0" text="30" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label fx:id="tempoLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="39.0" text="3460" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label fx:id="restLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="24.5" text="45" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Pane prefHeight="46.0" prefWidth="59.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b89d5c" height="24.0" layoutX="2.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 15; -fx-arc-width: 15;" width="25.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d78d" height="24.0" layoutX="29.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 15; -fx-arc-width: 15;" width="25.0" />
+            <ImageView fx:id="updateBtn" fitHeight="18.0" fitWidth="17.0" layoutX="5.0" layoutY="16.0" onMouseClicked="#updateAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../material/icons8-pencil-64%20(1).png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="deleteBtn" fitHeight="18.0" fitWidth="17.0" layoutX="33.0" layoutY="16.0" onMouseClicked="#deleteAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../material/icons8-delete-50%20(1).png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="updateDoneBtn" fitHeight="18.0" fitWidth="17.0" layoutX="5.0" layoutY="16.0" onMouseClicked="#updateDoneAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../material/icons8-done-64.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</HBox>

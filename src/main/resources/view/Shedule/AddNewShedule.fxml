@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="addShedulePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1126.0" style="-fx-background-color: #111010;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.AddNewSheduleController">
+   <children>
+      <VBox prefHeight="658.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="158.0" prefWidth="1126.0" />
+            <Pane prefHeight="649.0" prefWidth="1126.0">
+               <children>
+                  <Pane fx:id="applicationPane" layoutX="14.0" layoutY="7.0" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px;">
+                     <children>
+                        <VBox prefHeight="543.0" prefWidth="1100.0">
+                           <children>
+                              <Pane prefHeight="12.0" prefWidth="1060.0">
+                                 <children>
+                                    <Label text="Schedule Details  " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="75.0" prefWidth="1060.0" spacing="150.0">
+                                 <children>
+                                    <VBox prefHeight="50.0" prefWidth="547.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Pane prefHeight="45.0" prefWidth="344.0">
+                                             <children>
+                                                <Label layoutX="4.0" layoutY="9.0" prefHeight="22.0" prefWidth="104.0" text="Client ID - " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="clientIdLbl" layoutX="90.0" layoutY="9.0" prefHeight="22.0" prefWidth="104.0" text=" " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="goalComboBox" layoutX="361.0" layoutY="10.0" prefWidth="150.0" promptText="Goal" style="-fx-background-color: #1e1e1e;" stylesheets="@style2.css">
+                                                   <styleClass>
+                                                      <String fx:value="combo-box-popup" />
+                                                      <String fx:value="list-view" />
+                                                   </styleClass>
+                                                </ComboBox>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="251.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXTextField fx:id="nicTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="14.0" layoutY="-3.0" prefHeight="30.0" prefWidth="164.0" promptText="Client NIC" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="407.0" prefWidth="1060.0">
+                                 <children>
+                                    <Pane prefHeight="407.0" prefWidth="893.0" style="-fx-border-color: #3A3A3A; -fx-background-radius: 20; -fx-border-radius: 20;">
+                                       <children>
+                                          <VBox layoutX="288.0" layoutY="-2.0" prefHeight="402.0" prefWidth="392.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+                                             <children>
+                                                <Pane prefHeight="163.0" prefWidth="300.0">
+                                                   <children>
+                                                      <ImageView fitHeight="152.0" fitWidth="215.0" layoutX="118.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../material/wp.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Label layoutX="50.0" layoutY="138.0" prefHeight="23.0" prefWidth="182.0" text="Workout Programme  -" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="sheduleId" layoutX="224.0" layoutY="139.0" text="Memberships" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </Pane>
+                                                <Pane prefHeight="224.0" prefWidth="392.0">
+                                                   <children>
+                                                      <JFXTextArea fx:id="noteAre" focusColor="#1e1e1e" labelFloat="true" layoutX="4.0" layoutY="12.0" prefHeight="197.0" prefWidth="382.0" promptText="Notes here ..." styleClass="text-area" stylesheets="@../Clients/style2.css" unFocusColor="#1e1e1e" />
+                                                   </children>
+                                                </Pane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="132.0" prefWidth="144.0">
+                                       <HBox.margin>
+                                          <Insets top="310.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <JFXButton fx:id="addBtn" layoutX="38.0" layoutY="50.0" onAction="#navigateToSheduleMaking" prefHeight="33.0" prefWidth="86.0" style="-fx-background-color: #211d35; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #a564d3;" text="Continue" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <HBox prefHeight="82.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="218.0" prefWidth="316.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Schedule" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="38.0" prefWidth="312.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="11.0" text="New Schedule" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="149.0" prefWidth="177.0">
+               <children>
+                  <JFXButton fx:id="backScheduleBtn" onAction="#navigateToSheduleList" prefHeight="28.0" prefWidth="62.0" style="-fx-background-color: #211d35; -fx-border-color: #7db37c; -fx-border-radius: 20; -fx-background-radius: 20;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="45.0" top="18.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets left="630.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" onMouseClicked="#selectionClick" prefHeight="43.0" prefWidth="619.0" spacing="100.0" style="-fx-background-color: #1e1e1e; -fx-border-color: #111010; -fx-border-width: 0.3;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.ExpiringMemberController">
+   <children>
+      <Label fx:id="memberIdLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="70.0" text="Member ID" textFill="#8a888a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="26.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="nameLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="70.0" text="Name" textFill="#8a888a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="enddateLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="70.0" text="End-Date" textFill="#8a888a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="memberTypeLbl" alignment="CENTER" contentDisplay="CENTER" prefWidth="70.0" text="Member-Type" textFill="#8a888a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</HBox>

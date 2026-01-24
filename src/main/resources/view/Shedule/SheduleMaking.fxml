@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="sheduleMakingPane" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px; -fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.ScheduleMakingController">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="1100.0">
+         <children>
+            <Label text="Create Shedule" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="503.0" prefWidth="1060.0" spacing="65.0">
+               <children>
+                  <VBox prefHeight="497.0" prefWidth="269.0" style="-fx-border-radius: 20; -fx-border-color: #c9c9c9; -fx-border-width: 0.2px;">
+                     <children>
+                        <HBox prefHeight="78.0" prefWidth="269.0" spacing="50.0">
+                           <children>
+                              <VBox prefHeight="46.0" prefWidth="99.0">
+                                 <children>
+                                    <Pane prefHeight="62.0" prefWidth="99.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="73.0" layoutY="13.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-new-year-calendar-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="dayComboBox" layoutX="2.0" layoutY="7.0" onAction="#selectdayComboBox" prefHeight="30.0" prefWidth="73.0" promptText="Day" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="88.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="95.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="59.0" layoutY="15.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-priority-48.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXTextField fx:id="priorityNumTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="10.0" layoutY="9.0" prefHeight="30.0" prefWidth="57.0" promptText="Priority" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="78.0" prefWidth="269.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="179.0">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="153.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="121.0" layoutY="11.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-muscle-66.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="targetMuscleComboBox" layoutX="1.0" layoutY="6.0" onAction="#selectTargetMuscleComboBox" prefHeight="30.0" prefWidth="126.0" promptText="Target Muscle" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="48.0" prefWidth="113.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="57.0" layoutY="11.0">
+                                       <image>
+                                          <Image url="@../../material/icons8-weight-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXTextField fx:id="weightTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="8.0" layoutY="8.0" prefHeight="30.0" prefWidth="57.0" promptText="Weight" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="78.0" prefWidth="269.0" spacing="30.0">
+                           <children>
+                              <VBox prefHeight="69.0" prefWidth="267.0">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="134.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="235.0" layoutY="15.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-workout-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="workoutComboBox" layoutX="8.0" layoutY="7.0" onAction="#selectWorkoutComboBox" prefHeight="30.0" prefWidth="218.0" promptText="Workout ...." style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="78.0" prefWidth="269.0" spacing="30.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="113.0">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="134.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="73.0" layoutY="14.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-workout-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="setComboBox" layoutX="1.0" layoutY="7.0" onAction="#selectSetComboBox" prefHeight="30.0" prefWidth="73.0" promptText="Set" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="88.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="157.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="73.0" layoutY="14.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-workout-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="repComboBox" layoutX="1.0" layoutY="7.0" onAction="#selectRepComboBox" prefHeight="30.0" prefWidth="73.0" promptText="Rep" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="62.0" prefWidth="269.0" spacing="30.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="89.0" layoutY="14.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-workout-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="tempoComboBox" layoutX="1.0" layoutY="7.0" onAction="#selectTempoComboBox" prefHeight="30.0" prefWidth="88.0" promptText="Tempo" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="88.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="157.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="73.0" layoutY="14.0">
+                                             <image>
+                                                <Image url="@../../material/icons8-rest-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="restComboBox" layoutX="1.0" layoutY="7.0" onAction="#selectRestComboBox" prefHeight="30.0" prefWidth="73.0" promptText="Rest" style="-fx-background-color: #1e1e1e;" stylesheets="@../Clients/style2.css">
+                                             <styleClass>
+                                                <String fx:value="combo-box-popup" />
+                                                <String fx:value="list-view" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="addScheduleBtn" layoutX="3.0" layoutY="5.0" onAction="#addSchedule" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #a564d3; -fx-border-width: 0.8px;" text="Add to Schedule" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="dayCompletedBtn" layoutX="3.0" layoutY="5.0" onAction="#dayCompleted" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Day Completed" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton fx:id="updateBtn" layoutX="3.0" layoutY="5.0" onAction="#updateRow" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Update " textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="showScheduleBtn" layoutX="3.0" layoutY="5.0" onAction="#showSchedule" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #b89d5c; -fx-border-width: 0.8px;" text="Show Schedule" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="484.0" prefWidth="727.0" style="-fx-border-radius: 20; -fx-border-width: 0.2px; -fx-border-color: #c9c9c9;">
+                     <children>
+                        <Pane prefHeight="442.0" prefWidth="707.0">
+                           <children>
+                              <VBox prefHeight="432.0" prefWidth="707.0" spacing="5.0">
+                                 <children>
+                                    <HBox prefHeight="33.0" prefWidth="682.0">
+                                       <children>
+                                          <VBox prefHeight="38.0" prefWidth="65.0">
+                                             <children>
+                                                <Label fx:id="dayLbl" prefHeight="19.0" prefWidth="66.0" text="Day - " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Pane prefHeight="0.0" prefWidth="65.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <VBox prefHeight="448.0" prefWidth="703.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="699.0" spacing="67.0" style="-fx-background-color: #1e1e1e; -fx-border-width: 0.4;">
+                                             <children>
+                                                <Label fx:id="memberIdLbl1" alignment="CENTER" contentDisplay="CENTER" text="          Workout           " textFill="#8a888a" />
+                                                <Label fx:id="enddateLbl" alignment="CENTER" contentDisplay="CENTER" text="Weight" textFill="#8a888a" />
+                                                <Label fx:id="memberTypeLbl" alignment="CENTER" contentDisplay="CENTER" text="Set" textFill="#8a888a" />
+                                                <Label fx:id="memberTypeLbl1" alignment="CENTER" contentDisplay="CENTER" text="Rep" textFill="#8a888a" />
+                                                <Label fx:id="memberTypeLbl11" alignment="CENTER" contentDisplay="CENTER" text="Tempo" textFill="#8a888a" />
+                                                <Label fx:id="memberTypeLbl111" alignment="CENTER" contentDisplay="CENTER" text="Rest" textFill="#8a888a" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="2.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <VBox fx:id="sheduleTable" prefHeight="364.0" prefWidth="703.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="1.0" right="3.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <JFXButton fx:id="resetBtn" onAction="#resetBtnClick" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #a564d3; -fx-border-width: 0.8px;" text="Reset Table" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="nextBtn" onAction="#nextBtnAction" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #a564d3; -fx-border-width: 0.8px;" text="Next" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

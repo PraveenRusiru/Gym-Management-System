@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPaneMembership" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1126.0" style="-fx-background-color: #111010;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.MembershipController">
+   <children>
+      <VBox prefHeight="658.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="158.0" prefWidth="1126.0" />
+            <Pane prefHeight="503.0" prefWidth="1126.0">
+               <children>
+                  <VBox layoutX="13.0" layoutY="12.0" prefHeight="467.0" prefWidth="1100.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 10; -fx-border-radius: 10;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="1100.0">
+                           <children>
+                              <Label text="Membership List" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="28.0" prefWidth="233.0">
+                                 <HBox.margin>
+                                    <Insets left="630.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <JFXTextField focusColor="WHITE" layoutX="15.0" layoutY="12.0" prefColumnCount="0" prefHeight="33.0" prefWidth="204.0" promptText="Search" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#1e1e1e" />
+                                    <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="202.0" layoutY="22.0">
+                                       <image>
+                                          <Image url="@../../material/icons8-search-128.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <ComboBox prefHeight="26.0" prefWidth="79.0" promptText="Filter" style="-fx-background-color: #1e1e1e;" styleClass="text-field" stylesheets="@../../cssForBody/style.css" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="1100.0" spacing="100.0">
+                           <children>
+                              <Label text="Membership_Id" textFill="#8a888a">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Client_Id" textFill="#8a888a">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Start_date" textFill="#8a888a">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="End_date" textFill="#8a888a">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefWidth="193.0" text="Membership_type" textFill="#8a888a">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label textFill="#8a888a">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox fx:id="tableVBox" prefHeight="387.0" prefWidth="1100.0">
+                           <VBox.margin>
+                              <Insets left="8.0" right="8.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="previousBtn" fitHeight="18.0" fitWidth="18.0" layoutX="533.0" layoutY="479.0" onMouseClicked="#loadPreviousRows">
+                     <image>
+                        <Image url="@../../material/icons8-back-50.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="nextBtn" fitHeight="18.0" fitWidth="18.0" layoutX="581.0" layoutY="479.0" onMouseClicked="#loadNextRow">
+                     <image>
+                        <Image url="@../../material/icons8-next-50.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <HBox prefHeight="149.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="218.0" prefWidth="316.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Membership" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="115.0" prefWidth="293.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 30;" styleClass="pie-chart" stylesheets="@../Dashboard/Piechart.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="6.0" text="Newly Added" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl1" layoutX="41.0" layoutY="31.0" prefHeight="33.0" prefWidth="38.0" text="12" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#f5db7a" layoutX="17.0" layoutY="15.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fx:id="FAProgress" fitHeight="81.0" fitWidth="135.0" layoutX="138.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../material/progressChart.gif" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="clientCountPercentageLbl" layoutX="70.0" layoutY="71.0" prefHeight="13.0" prefWidth="68.0" text="- 30%   " textFill="#fb6868">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="FADown" fitHeight="81.0" fitWidth="135.0" layoutX="146.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../material/down.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="218.0" prefWidth="316.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="115.0" prefWidth="293.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 30;" styleClass="pie-chart" stylesheets="@../Dashboard/Piechart.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="6.0" text="Going to Expire" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl2" layoutX="41.0" layoutY="31.0" prefHeight="33.0" prefWidth="38.0" text="2" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#f5db7a" layoutX="17.0" layoutY="15.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fx:id="FAProgress1" fitHeight="81.0" fitWidth="135.0" layoutX="138.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../material/progressChart.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+               <HBox.margin>
+                  <Insets left="16.0" top="16.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="149.0" prefWidth="334.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="115.0" prefWidth="293.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 30;" styleClass="pie-chart" stylesheets="@../Dashboard/Piechart.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="6.0" text="Revenue   Rs" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl3" layoutX="14.0" layoutY="31.0" prefHeight="33.0" prefWidth="119.0" text="Rs.230000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#f5db7a" layoutX="17.0" layoutY="15.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fx:id="FAProgress2" fitHeight="81.0" fitWidth="135.0" layoutX="138.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../material/progressChart.gif" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="clientCountPercentageLbl2" layoutX="70.0" layoutY="71.0" prefHeight="13.0" prefWidth="68.0" text="up  + 2%   " textFill="#90d78d">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <HBox.margin>
+                  <Insets left="16.0" top="16.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="149.0" prefWidth="177.0">
+               <children>
+                  <JFXButton fx:id="newMembershipBtn" onAction="#navigateToNewMembership" style="-fx-background-color: #211d35; -fx-border-color: #7db37c; -fx-border-radius: 20; -fx-background-radius: 20;" text="New Membership+" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="27.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

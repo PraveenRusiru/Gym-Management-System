@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="servicePane" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px; -fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.ServiceClientController">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="1100.0">
+         <children>
+            <Label text="Service Selection" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="490.0" prefWidth="1060.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="442.0" prefWidth="1060.0" spacing="40.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+                     <children>
+                        <Pane prefHeight="450.0" prefWidth="451.0" style="-fx-border-color: #3A3A3A; -fx-background-radius: 20; -fx-border-radius: 20;">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="40.0" top="20.0" />
+                           </HBox.margin>
+                           <children>
+                              <VBox layoutX="76.0" prefHeight="402.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+                                 <children>
+                                    <Pane prefHeight="163.0" prefWidth="300.0">
+                                       <children>
+                                          <ImageView fitHeight="152.0" fitWidth="215.0" layoutX="74.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../material/Untitled%20design%20(5).png" />
+                                             </image>
+                                          </ImageView>
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e1e1e" height="17.0" layoutX="110.0" layoutY="150.0" stroke="#1e1e1e" strokeType="INSIDE" width="22.0" />
+                                          <Label layoutX="49.0" layoutY="141.0" prefHeight="23.0" prefWidth="126.0" text="Memberships  -" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="memberIdLabel" layoutX="176.0" layoutY="141.0" text="Memberships" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="186.0" prefWidth="300.0">
+                                       <children>
+                                          <VBox layoutX="-2.0" layoutY="3.0" prefHeight="178.0" prefWidth="300.0">
+                                             <children>
+                                                <RadioButton fx:id="introFitRB" mnemonicParsing="false" stylesheets="@style2.css" text="Intro Fit  - 3-Month Beginner Membership" textFill="WHITE">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="membershipType" />
+                                                   </toggleGroup>
+                                                   <VBox.margin>
+                                                      <Insets top="18.0" />
+                                                   </VBox.margin></RadioButton>
+                                                <RadioButton fx:id="fitFocusRB" mnemonicParsing="false" stylesheets="@style2.css" text="Fit Focus – 6-Month Membership" textFill="WHITE" toggleGroup="$membershipType">
+                                                   <VBox.margin>
+                                                      <Insets top="18.0" />
+                                                   </VBox.margin>
+                                                </RadioButton>
+                                                <RadioButton fx:id="strrengthRB" mnemonicParsing="false" stylesheets="@style2.css" text="Year of Strength – 12-Month Membership" textFill="WHITE" toggleGroup="$membershipType">
+                                                   <VBox.margin>
+                                                      <Insets top="18.0" />
+                                                   </VBox.margin>
+                                                </RadioButton>
+                                                <RadioButton fx:id="flexFitRB" mnemonicParsing="false" stylesheets="@style2.css" text="Flexi Fit – Monthly Subscription, Cancel Anytime" textFill="WHITE" toggleGroup="$membershipType">
+                                                   <VBox.margin>
+                                                      <Insets top="18.0" />
+                                                   </VBox.margin>
+                                                </RadioButton>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" left="30.0" right="15.0" top="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="79.0" prefWidth="300.0">
+                                       <children>
+                                          <JFXButton fx:id="doneBtn" layoutX="115.0" layoutY="5.0" onAction="#membershipOnAction" prefHeight="38.0" prefWidth="71.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #ceb331; -fx-border-width: 0.8px;" text="Done" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="451.0" style="-fx-border-color: #3A3A3A; -fx-background-radius: 20; -fx-border-radius: 20;">
+                           <children>
+                              <VBox layoutX="76.0" prefHeight="450.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+                                 <children>
+                                    <Pane prefHeight="187.0" prefWidth="300.0">
+                                       <children>
+                                          <ImageView fitHeight="152.0" fitWidth="215.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../material/wp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e1e1e" height="17.0" layoutX="110.0" layoutY="150.0" stroke="#1e1e1e" strokeType="INSIDE" width="22.0" />
+                                          <Label layoutX="72.0" layoutY="156.0" text="Workout Programme" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="157.0" prefWidth="320.0">
+                                       <children>
+                                          <VBox layoutX="-2.0" layoutY="3.0" prefHeight="169.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="15.0" left="30.0" right="15.0" top="15.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXTextArea fx:id="noteAre" focusColor="#1e1e1e" labelFloat="true" prefHeight="151.0" prefWidth="255.0" promptText="Notes here ..." styleClass="text-area" stylesheets="@style2.css" unFocusColor="#1e1e1e" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="60.0" prefWidth="300.0">
+                                       <children>
+                                          <JFXButton fx:id="createPrgrmBtn" layoutX="83.0" layoutY="-5.0" onAction="#navigateToShedule" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #ceb331; -fx-border-width: 0.8px;" text="Create Programm" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="paymentBtn" layoutX="929.0" layoutY="439.0" onAction="#paymentOnAction" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Payment" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="40.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

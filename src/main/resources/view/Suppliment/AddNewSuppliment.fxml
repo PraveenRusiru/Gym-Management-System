@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="clientDataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1126.0" style="-fx-background-color: #111010;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.AddNewSuppliment">
+   <children>
+      <VBox prefHeight="658.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="158.0" prefWidth="1126.0" />
+            <Pane prefHeight="649.0" prefWidth="1126.0">
+               <children>
+                  <Pane fx:id="applicationPane" layoutX="14.0" layoutY="7.0" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px;">
+                     <children>
+                        <VBox prefHeight="543.0" prefWidth="1100.0">
+                           <children>
+                              <Pane prefHeight="12.0" prefWidth="1060.0">
+                                 <children>
+                                    <Label text="Suppliment Details  : " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="suppIdLbl" layoutX="137.0" layoutY="-1.0" text="Cleint Details " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dateLbl" layoutX="297.0" layoutY="-1.0" text="Cleint Details " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="429.0">
+                                       <children>
+                                          <Pane fx:id="supplimentPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10; radi: ;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="nameTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" prefHeight="30.0" prefWidth="378.0" promptText="Suppliemnt Name" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="354.0" layoutY="11.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-protein-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="251.0">
+                                       <children>
+                                          <Pane fx:id="categoryPane" prefHeight="48.0" prefWidth="329.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="210.0" layoutY="19.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-collection-of-different-size-of-medicines-and-capsule-24.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ComboBox fx:id="categoryComboBox" layoutX="11.0" layoutY="8.0" onAction="#categorycomboBoxSelected" prefHeight="30.0" prefWidth="200.0" promptText="Category" style="-fx-background-color: #111010;" stylesheets="@../Clients/style2.css">
+                                                   <styleClass>
+                                                      <String fx:value="combo-box-popup" />
+                                                      <String fx:value="list-view" />
+                                                   </styleClass>
+                                                </ComboBox>
+                                                <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="228.0" layoutY="15.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-protein-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="112.0" stylesheets="@supplimentStyle.css">
+                                       <children>
+                                          <Pane fx:id="stockQtyPane" prefHeight="48.0" prefWidth="124.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="qtyTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onAction="#validateQty" onKeyTyped="#validateQty" prefHeight="30.0" prefWidth="87.0" promptText="Stock Qty" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="19.0" fitWidth="24.0" layoutX="79.0" layoutY="15.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-stock-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="155.0">
+                                       <children>
+                                          <Pane fx:id="inventoryIdPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="inventoryIdTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateInventoryId" prefHeight="30.0" prefWidth="137.0" promptText="Inventory Id" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="121.0" layoutY="13.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-inventory-100.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="356.0">
+                                       <children>
+                                          <Pane fx:id="supplierPane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-radius: 10; -fx-border-width: 0.2px;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="supplierTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onKeyTyped="#validateSupplier" prefHeight="30.0" prefWidth="330.0" promptText="Supplier" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="310.0" layoutY="10.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-supplier-80.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane fx:id="pricePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="priceTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onAction="#validatePrice" onKeyTyped="#validatePrice" prefHeight="30.0" prefWidth="143.0" promptText="Selling Price" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="119.0" layoutY="13.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-protein-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="109.0" layoutY="15.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-price-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="85.0" prefWidth="153.0">
+                                       <children>
+                                          <Pane fx:id="wholesalePricePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <JFXTextField fx:id="wholesalePriceTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="11.0" layoutY="8.0" onAction="#validateWholesalePrice" onKeyTyped="#validatePrice" prefHeight="30.0" prefWidth="143.0" promptText="Wholesale  Price" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                                <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="119.0" layoutY="13.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-protein-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="109.0" layoutY="15.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-price-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="75.0" prefWidth="251.0">
+                                       <children>
+                                          <Pane fx:id="datePane" prefHeight="48.0" prefWidth="312.0" style="-fx-border-color: #c9c9c9; -fx-border-width: 0.2px; -fx-border-radius: 10;" styleClass="pane" stylesheets="@supplimentStyle.css">
+                                             <children>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="221.0" layoutY="14.0">
+                                                   <image>
+                                                      <Image url="@../../material/icons8-date-100.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <DatePicker fx:id="datePicker" layoutX="5.0" layoutY="7.0" onAction="#pickdate" promptText="Pick the Purchased Date" styleClass="date-picker" stylesheets="@supplimentStyle.css" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="196.0" prefWidth="1060.0" spacing="100.0">
+                                 <children>
+                                    <JFXTextArea fx:id="descriptionArea" focusColor="#111010" prefHeight="196.0" prefWidth="829.0" promptText="    Description" stylesheets="@supplimentStyle.css" unFocusColor="#111010" />
+                                    <Pane prefHeight="100.0" prefWidth="144.0">
+                                       <HBox.margin>
+                                          <Insets top="100.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <JFXButton fx:id="addBtn" layoutX="38.0" layoutY="50.0" onAction="#navigateToAddNewSuppliment" style="-fx-background-color: #211d35; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #a564d3;" text="     Add      " textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton fx:id="updateBtn" layoutX="39.0" layoutY="50.0" onAction="#backToSuppliemnt" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: #211d35; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #a564d3;" text="Update" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <HBox prefHeight="82.0" prefWidth="1126.0">
+         <children>
+            <VBox prefHeight="218.0" prefWidth="316.0">
+               <children>
+                  <Label fx:id="clientLbl" alignment="CENTER" contentDisplay="CENTER" text="Suppliments" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="38.0" prefWidth="312.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="11.0" text="New Suppliment" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="149.0" prefWidth="177.0">
+               <children>
+                  <JFXButton fx:id="backSuplliemnttBtn" onAction="#navigateToSuppList" prefHeight="28.0" prefWidth="62.0" style="-fx-background-color: #211d35; -fx-border-color: #7db37c; -fx-border-radius: 20; -fx-background-radius: 20;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="45.0" top="18.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets left="630.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

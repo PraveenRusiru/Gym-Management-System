@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hBoxcontainer" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="1100.0" spacing="90.0" style="-fx-border-color: #111010; -fx-border-width: 0 0 1 0;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.SheduleDataRowController">
+   <children>
+      <Label fx:id="clientIdLbl" prefWidth="64.5" text="Cliendt_Id" textFill="#8a888a">
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sheduleIdLbl" prefWidth="78.5" text="Schedule_id" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="dayLbl" prefWidth="30.5" text="days" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="issuedDateLbl" prefWidth="77.5" text="Issued_date" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="expireDateLbl" prefWidth="75.0" text="Expire_date" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="goalLbl" prefHeight="19.0" prefWidth="120.0" text="Goal" textFill="#8a888a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="46.0" prefWidth="131.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d78d" height="24.0" layoutX="23.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 15; -fx-arc-width: 15;" width="25.0" />
+            <ImageView fx:id="detailUpdateBtn" fitHeight="18.0" fitWidth="17.0" layoutX="27.0" layoutY="15.0" onMouseClicked="#detailUpdateAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../material/icons8-pencil-64%20(1).png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8a888a" height="24.0" layoutX="75.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 15; -fx-arc-width: 15;" width="25.0" />
+            <ImageView fx:id="deleteBtn" fitHeight="17.0" fitWidth="17.0" layoutX="79.0" layoutY="15.0" onMouseClicked="#deleteAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../material/icons8-delete-50%20(1).png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</HBox>

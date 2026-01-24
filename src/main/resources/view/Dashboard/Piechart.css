@@ -1,0 +1,41 @@
+.default-color0.chart-pie{
+    -fx-pie-color:#523b99;
+}
+.default-color1.chart-pie{
+    -fx-pie-color:#f5db7a;
+}
+.default-color2.chart-pie{
+    -fx-pie-color:#689366;
+}
+/*.pie-chart {*/
+/*    !* Add a circle in the middle of the chart *!*/
+/*    -fx-background-radius: 50%;*/
+/*    -fx-background-color: #1e1e1e; !* or any other color you prefer *!*/
+/*    -fx-padding: 10; !* adjust the padding to fit your needs *!*/
+/*}*/
+/*.pie-chart {*/
+/*    !* Change the border width for the chart *!*/
+/*    -fx-stroke-width: 2; !* adjust the width to your liking *!*/
+/*}*/
+
+/*.pie-chart .chart-pie {*/
+/*    !* Change the border width for each pie slice *!*/
+/*    -fx-stroke-width: 1; !* adjust the width to your liking *!*/
+/*}*/
+.pie-chart {
+    /* Add a circle in the middle of the chart */
+    -fx-background-radius: 50%;
+    -fx-background-color: #1e1e1e; /* or any other color you prefer */
+    -fx-padding: 10; /* adjust the padding to fit your needs */
+
+    /* Change the border width and color for the chart */
+    -fx-stroke-width: 2; /* adjust the width to your liking */
+    -fx-stroke: #333; /* adjust the color to your liking */
+}
+
+.pie-chart .chart-pie {
+    /* Change the border width and color for each pie slice */
+    -fx-border-color:#1e1e1e ;
+    -fx-stroke-width: 1; /* adjust the width to your liking */
+    -fx-stroke: #666; /* adjust the color to your liking */
+}

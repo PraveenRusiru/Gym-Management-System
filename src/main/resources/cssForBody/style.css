@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #05023b, #b214bb);
+}
+.body-background {
+    -fx-background-color: radial-gradient(
+            radius 100%,   #afb6be 85%, #ffffff 180%);
+}
+.shape-with-shadow {
+    -fx-fill: rgb(156, 156, 156); /* Shape color */
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 10, 0.1, 0, 4);
+}
+.label-with-glow {
+    -fx-font-family: "Serif";       /* Serif font */
+    -fx-font-size: 32px;            /* Font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-effect: glow(0.8); /* The level of glow (0.0 to 1.0) */
+}
+#clientIconCirlce{
+    -fx-background-radius: 75;
+    -fx-border-radius: 75;
+    -fx-border-width: 3;
+    -fx-border-color: black;
+    -fx-shape: "M 75 0 A 75 75 0 1 0 75 150 A 75 75 0 1 0 75 0";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0.0, 0.0);
+}
+
+.rectangle {
+    -fx-background-radius: 30px ;
+}
+.text-field {
+    -fx-text-fill: #848490; /* Sets the font color to blue */
+}

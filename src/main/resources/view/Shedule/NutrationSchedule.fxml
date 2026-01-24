@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="nutrationSheduleMakingPane" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px; -fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.NutrationScheduleController">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="1100.0">
+         <children>
+            <Label text="Create Shedule" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="503.0" prefWidth="1060.0" spacing="65.0">
+               <children>
+                  <VBox prefHeight="443.0" prefWidth="269.0" style="-fx-border-radius: 20; -fx-border-color: #c9c9c9; -fx-border-width: 0.2px;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0" />
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="92.0" prefWidth="269.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="210.0" layoutY="26.0">
+                                 <image>
+                                    <Image url="@../../material/icons8-bread-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="maintainaceTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="40.0" layoutY="30.0" prefHeight="30.0" prefWidth="162.0" promptText="Maintainance Calories          g" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="92.0" prefWidth="269.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="210.0" layoutY="26.0">
+                                 <image>
+                                    <Image url="@../../material/icons8-bread-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="weightLossTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="40.0" layoutY="30.0" prefHeight="30.0" prefWidth="162.0" promptText="Weight loss Calories             g" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                           </children>
+                        </Pane>
+                        <HBox prefHeight="78.0" prefWidth="269.0">
+                           <children>
+                              <Pane prefHeight="92.0" prefWidth="269.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="210.0" layoutY="26.0">
+                                       <image>
+                                          <Image url="@../../material/icons8-protein-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXTextField fx:id="proteinTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="40.0" layoutY="30.0" prefHeight="30.0" prefWidth="162.0" promptText="Protein                g" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="78.0" prefWidth="269.0">
+                           <children>
+                              <Pane prefHeight="92.0" prefWidth="269.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="210.0" layoutY="26.0">
+                                       <image>
+                                          <Image url="@../../material/icons8-fat-50.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXTextField fx:id="fatTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="40.0" layoutY="30.0" prefHeight="30.0" prefWidth="162.0" promptText="Fat                       g" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="78.0" prefWidth="269.0">
+                           <children>
+                              <Pane prefHeight="92.0" prefWidth="269.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="210.0" layoutY="26.0">
+                                       <image>
+                                          <Image url="@../../material/icons8-bread-64.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXTextField fx:id="carbsTxt" focusColor="#c9c9c9" labelFloat="true" layoutX="40.0" layoutY="30.0" prefHeight="30.0" prefWidth="162.0" promptText="Carbs                 g" styleClass="text-field" stylesheets="@../../cssForBody/style.css" unFocusColor="#c9c9c9" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="programmeAddScheduleBtn1" layoutX="3.0" layoutY="7.0" onAction="#programmeAddSchedule" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #a564d3; -fx-border-width: 0.8px;" text="Add to Schedule" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="484.0" prefWidth="707.0" style="-fx-border-radius: 20; -fx-border-width: 0.2px; -fx-border-color: #c9c9c9;">
+                     <children>
+                        <Pane prefHeight="442.0" prefWidth="707.0">
+                           <children>
+                              <VBox prefHeight="432.0" prefWidth="707.0" spacing="5.0">
+                                 <children>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="15.0" prefHeight="20.0" prefWidth="162.0" text="Nutration Programme  -" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="programmeId" layoutX="184.0" layoutY="15.0" prefHeight="20.0" prefWidth="98.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="54.0" layoutY="15.0" text="Goal     " textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="goalLbl" layoutX="449.0" layoutY="15.0" prefHeight="20.0" prefWidth="162.0" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="15.0" text="Maintainace Calories Count     (Kcal)" textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="maintainCaloriesLbl" layoutX="450.0" layoutY="15.0" onMouseClicked="#addToMaintainanceTxt" prefHeight="20.0" prefWidth="77.0" text="                  " textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="15.0" text="Needed Calories Count      (Kcal) " textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="weightLossCaloriesLbl" layoutX="450.0" layoutY="15.0" onMouseClicked="#addToWeightlossTxt" text="                       " textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="54.0" layoutY="15.0" text="Protein Intake(g)     " textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="proteinLbl" layoutX="450.0" layoutY="15.0" onMouseClicked="#addToProteinTxt" prefHeight="20.0" prefWidth="75.0" text="               " textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="54.0" layoutY="15.0" text="Fat Intake(g)     " textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="fatLbl" layoutX="449.0" layoutY="15.0" onMouseClicked="#addToFatTxt" text="12" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="54.0" layoutY="15.0" text="Carbs Intake(g)     " textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="carbsLbl" layoutX="449.0" layoutY="15.0" onMouseClicked="#addToCarbsTxt" text="280" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="nutrationNextBtn" layoutX="36.0" layoutY="5.0" onAction="#nutationNextBtnAction" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #a564d3; -fx-border-width: 0.8px;" text="Next" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="530.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

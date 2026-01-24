@@ -1,0 +1,70 @@
+
+.body-background {
+    -fx-background-color: radial-gradient(
+            radius 100%, #DB6B24 20%, #2494DB 85%, #28D791 180%);
+}
+.shape-with-shadow {
+    -fx-fill: rgb(156, 156, 156); /* Shape color */
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 10, 0.1, 0, 4);
+}
+.label-with-glow {
+    -fx-font-family: "Serif";       /* Serif font */
+    -fx-font-size: 32px;            /* Font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-effect: glow(0.8); /* The level of glow (0.0 to 1.0) */
+}
+#clientIconCirlce{
+    -fx-background-radius: 75;
+    -fx-border-radius: 75;
+    -fx-border-width: 3;
+    -fx-border-color: black;
+    -fx-shape: "M 75 0 A 75 75 0 1 0 75 150 A 75 75 0 1 0 75 0";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0.0, 0.0);
+}
+/*@font-face {*/
+/*    font-family: "MyCustomFont";*/
+/*    src: url("font/Misty Graveyard.ttf");*/
+/*}*/
+/*.label {*/
+/*    -fx-font-family: "MyCustomFont";*/
+/*    -fx-font-size: 12pt;*/
+/*    -fx-weight: bold;*/
+/*}*/
+.selector {
+    background-image: url('./material/background.png');
+}
+.text-area{
+    -fx-text-fill: #848490;
+}
+.combo-box-popup .list-view {
+    -fx-background-color:  #111010; /* Light gray background */
+}
+.combo-box-popup .list-cell {
+    -fx-text-fill: #c9c9c9; /* Dark gray text */
+}
+.combo-box-popup .list-cell:filled:selected,
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #1e1e1e   ; /* Green highlight */
+    -fx-text-fill: #c9c9c9; /* White text on highlighted item */
+}
+
+
+/* Circle styling for selected and unselected states */
+.radio-button .radio {
+    -fx-background-color: #1e1e1e, #ffffff; /* Outer and inner circle color */
+    -fx-padding: 2px;                       /* Padding for the radio circle */
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #ceb331,#000000; /* Outer color when selected */
+    -fx-background-insets: 0, 2;            /* Inset for the inner circle */
+}
+
+/* Hover effect on radio button */
+.radio-button:hover .radio {
+    -fx-background-color: #000000, #ceb331; /* Hover effect */
+    -fx-padding: 1px;
+}
+
+

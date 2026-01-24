@@ -1,0 +1,32 @@
+.date-picker {
+    -fx-background-color:  #111010;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.date-picker:focused {
+    -fx-border-color: #111010;
+    -fx-background-color: #111010;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color:  #111010; /* Light gray background */
+}
+.combo-box-popup .list-cell {
+    -fx-text-fill: #c9c9c9; /* Dark gray text */
+}
+.combo-box-popup .list-cell:filled:selected,
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #1e1e1e   ; /* Green highlight */
+    -fx-text-fill: #c9c9c9; /* White text on highlighted item */
+}
+.text-area {
+    -fx-text-fill: #848490; /* Dark gray color */
+}
+
+.pane:hover {
+   // -fx-background-color: #f0f8ff; /* Light blue when hovered */
+    -fx-border-color: #0078d7; /* Blue border when hovered */
+}

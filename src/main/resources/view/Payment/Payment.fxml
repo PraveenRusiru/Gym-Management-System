@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="nutrationSheduleMakingPane" prefHeight="543.0" prefWidth="1100.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #1e1e1e; -fx-border-width: 3px; -fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.PaymentController">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="1100.0">
+         <children>
+            <Label text="Payment Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="503.0" prefWidth="1060.0" spacing="65.0">
+               <children>
+                  <VBox prefHeight="484.0" prefWidth="1020.0" style="-fx-border-radius: 20; -fx-border-width: 0.2px; -fx-border-color: #c9c9c9;">
+                     <children>
+                        <Pane prefHeight="427.0" prefWidth="1020.0">
+                           <children>
+                              <VBox prefHeight="432.0" prefWidth="1020.0" spacing="5.0">
+                                 <children>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="15.0" text="Payment ID  -" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="paymentIdLbl" layoutX="123.0" layoutY="15.0" text="Payment Slip" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="54.0" layoutY="15.0" text="Date" textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dateLbl" layoutX="141.0" layoutY="13.0" prefHeight="20.0" prefWidth="162.0" text="3333333" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="15.0" text="Membership" textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="service1Lbl" layoutX="343.0" layoutY="13.0" prefHeight="20.0" prefWidth="276.0" text="description" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="service1PriceLbl" layoutX="730.0" layoutY="13.0" prefHeight="20.0" prefWidth="144.0" text="7800" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="706.0" layoutY="13.0" prefHeight="20.0" prefWidth="22.0" text="Rs." textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="15.0" text="Schedule" textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="service2Lbl" layoutX="343.0" layoutY="13.0" prefHeight="20.0" prefWidth="276.0" text="description" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="service2PriceLbl" layoutX="730.0" layoutY="13.0" prefHeight="20.0" prefWidth="144.0" text="7800" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="706.0" layoutY="15.0" prefHeight="20.0" prefWidth="22.0" text="Rs." textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="15.0" text="Total  Amount" textFill="#b89d5c">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="totalAmountLbl" layoutX="730.0" layoutY="13.0" prefHeight="20.0" prefWidth="144.0" text="7800" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="707.0" layoutY="13.0" prefHeight="20.0" prefWidth="22.0" text="Rs." textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="45.0" prefWidth="707.0">
+                                       <VBox.margin>
+                                          <Insets left="890.0" top="130.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <JFXButton fx:id="finishNewShedule" onAction="#finishNewSheduleAction" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Finish " textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="269.0" spacing="25.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="121.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="123.0" style="-fx-border-width: 0.2px; -fx-border-radius: 10;">
+                                       <children>
+                                          <JFXButton fx:id="paymentBtn" layoutX="26.0" layoutY="6.0" onAction="#paymentBtnAction" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Finish " textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children></Pane>
+                                 </children>
+                              </VBox>
+                              <JFXButton fx:id="finishMembershipAdd" onAction="#finishMembershipAddAction" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1e1e1e; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7db37c; -fx-border-width: 0.8px;" text="Finish " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="700.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

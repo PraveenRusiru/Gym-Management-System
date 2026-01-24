@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="671.0" prefWidth="1200.0" styleClass="root" stylesheets="@../../cssForBody/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fitness.controller.LoginController">
+   <children>
+      <ImageView fx:id="backgroundView" fitHeight="709.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" styleClass="shape-with-shadow">
+         <image>
+            <Image url="@../../material/Leonardo_Phoenix_Design_a_sleek_and_modern_login_page_backgrou_2%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="BackgroundLoginPane" layoutX="355.0" layoutY="188.0" prefHeight="302.0" prefWidth="489.0" style="-fx-border-color: #fefdff; -fx-border-width: 3px; -fx-border-radius: 40;" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="188.0">
+         <effect>
+            <Glow level="0.32" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
