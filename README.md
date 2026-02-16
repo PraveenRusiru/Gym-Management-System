@@ -1,23 +1,20 @@
-Here’s a clean, professional, GitHub-ready README.md based exactly on what you provided (no assumptions, no lies). You can copy-paste this directly into your repo 👇
-
-⸻
 
 🏋️ Gym Management System
 
 📌 Project Description
 
-The Gym Management System is a desktop-based application designed to help small and single-trainer gyms efficiently manage daily operations.
-It simplifies client management, workout tracking, nutrition monitoring, memberships, and payments, reducing the administrative workload on gym owners.
-
-The system is built using a layered architecture, ensuring clean code structure, scalability, and easy maintenance.
+The Gym Management System is a desktop-based application designed to help small and single-trainer gyms manage daily operations efficiently.
+	•	Simplifies client management, workout tracking, nutrition monitoring, memberships, and payments
+	•	Reduces administrative workload on gym owners
+	•	Built using a layered architecture for clean code, scalability, and maintainability
 
 ⸻
 
 🎯 Objectives
 	•	Digitize gym operations for small and medium-sized gyms
 	•	Reduce manual record keeping
-	•	Help single-trainer gym owners manage clients efficiently
-	•	Accurately track workouts, nutrition, and membership status
+	•	Enable single-trainer gym owners to manage clients efficiently
+	•	Accurately track workouts, nutrition, memberships, and payments
 
 ⸻
 
@@ -31,7 +28,7 @@ The application follows a 4-layer architecture:
 	•	Handles user interactions and UI logic
 
 2️⃣ Service / Business Logic Layer
-	•	Contains application rules and validations
+	•	Contains business rules and validations
 	•	Processes data before passing it to the DAO layer
 	•	Acts as a bridge between UI and database layers
 
@@ -43,18 +40,18 @@ The application follows a 4-layer architecture:
 4️⃣ Database Layer
 	•	MySQL relational database
 	•	Uses constraints, foreign keys, and normalization
-	•	Securely stores clients, workouts, nutrition data, and payments
+	•	Securely stores client, workout, nutrition, and payment data
 
 ⸻
 
 🚀 Features
-	•	Client registration and management
-	•	Workout plan creation and tracking
+	•	Client registration and profile management
+	•	Workout plan creation and progress tracking
 	•	Nutrition tracking and daily updates
 	•	Membership and payment management
-	•	Progress tracking and reporting
+	•	Progress tracking and report generation
 	•	Secure login with encrypted passwords
-	•	Report generation (JasperReports supported)
+	•	JasperReports-based report generation
 
 ⸻
 
@@ -65,12 +62,8 @@ The application follows a 4-layer architecture:
 	•	Database Connectivity: JDBC
 	•	Build Tool: Maven
 	•	Architecture Pattern: Layered Architecture
-	•	Security: AES encryption for passwords
-	![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-	![JavaFX](https://img.shields.io/badge/JavaFX-2C2255?style=for-the-badge)
-	![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-	![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-	![Architecture](https://img.shields.io/badge/Architecture-Layered-blue?style=for-the-badge)
+	•	Security: AES password encryption
+
 ⸻
 
 📂 Project Structure
@@ -79,7 +72,7 @@ Gym-Management-System
 │
 ├── controller      # UI controllers
 ├── service         # Business logic
-├── dao             # Data access objects
+├── dao             # Data access layer
 ├── model           # Entity classes
 ├── util            # Utility classes
 ├── view            # FXML UI files
@@ -92,27 +85,23 @@ Gym-Management-System
 ⚙️ Installation & Setup
 
 Prerequisites
-	•	Java JDK 17 or above
+	•	Java JDK 17 or higher
 	•	MySQL Server
 	•	Maven
 	•	JavaFX properly configured
 
-Steps
-	1.	Clone the repository
-
-git clone https://github.com/PraveenRusiru/Gym-Management-System.git
-
-
-	2.	Open the project in IntelliJ IDEA
-	3.	Configure database connection details
-	4.	Run the provided SQL script to create tables
-	5.	Launch the application
+Setup Steps
+	•	Clone the repository
+	•	Import the project into IntelliJ IDEA
+	•	Configure database connection settings
+	•	Run the SQL script to create database tables
+	•	Launch the application
 
 ⸻
 
 🔐 Security
 	•	Passwords are stored using AES encryption
-	•	Prevents storing plain-text credentials
+	•	Prevents storage of plain-text credentials
 	•	Supports role-based access control (Admin / Trainer)
 
 ⸻
@@ -121,7 +110,7 @@ git clone https://github.com/PraveenRusiru/Gym-Management-System.git
 	•	Cloud-based database support
 	•	Mobile application integration
 	•	Advanced analytics and dashboards
-	•	Biometric login support
+	•	Biometric authentication support
 	•	Notification system for membership expiry
 
 ⸻
@@ -133,7 +122,6 @@ git clone https://github.com/PraveenRusiru/Gym-Management-System.git
 ⸻
 
 📄 License
-
-This project is developed for educational and personal use only.
+	•	Developed for educational and personal use only
 
 ⸻
