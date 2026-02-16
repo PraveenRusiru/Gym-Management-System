@@ -74,15 +74,14 @@ The application follows a **4-layer architecture**:
 
 Gym-Management-System
 │
--├── controller      # UI controllers
--├── service         # Business logic
--├── dao             # Data access layer
--├── model           # Entity classes
--├── util            # Utility classes
--├── view            # FXML UI files
--├── resources       # CSS, images, reports
--└── AppInitializer  # Application entry point
-
+├── controller      # UI controllers
+├── service         # Business logic
+├── dao             # Data access layer
+├── model           # Entity classes
+├── util            # Utility classes
+├── view            # FXML UI files
+├── resources       # CSS, images, reports
+└── AppInitializer  # Application entry point
 ---
 
 ## ⚙️ Installation & Setup
